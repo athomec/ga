@@ -477,6 +477,9 @@ h3 {
 
 .list .list-item {
   margin-bottom: 15px; }
+  @media (max-width: 450px) {
+    .list .list-item {
+      flex-wrap: wrap; } }
 
 .list .list-title {
   display: block;
@@ -484,10 +487,17 @@ h3 {
   color: #fff;
   width: 128px;
   padding: 2px 13px; }
+  @media (max-width: 450px) {
+    .list .list-title {
+      width: auto;
+      display: inline-block; } }
 
 .list .list-txt {
   width: calc(100% - 140px);
   margin-bottom: 0; }
+  @media (max-width: 450px) {
+    .list .list-txt {
+      width: 100%; } }
 
 .info-box {
   margin-bottom: 10px;
@@ -1833,7 +1843,7 @@ header {
       padding: 10px 20px; } }
   @media (max-width: 450px) {
     .single_service {
-      padding: 10px 20px; } }
+      padding: 10px 10px 10px 20px; } }
   .single_service .icon {
     width: 50px; }
     @media (max-width: 991px) {
