@@ -40,8 +40,8 @@
     </header>
     <!-- header-end -->
     <!--內容開始-->
-    <!--無活動視窗開始-->
-<div class="modal fade" id="message-none" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--提醒視窗開始-->
+<div class="modal fade" id="message-notice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -51,8 +51,8 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                很抱歉，近期無課程/活動！<br>
-敬請期待，謝謝您！
+                請選擇「欲報名場次」，謝謝您！<br>
+請選擇「用餐調查」，謝謝您！
             </div>
             <div class="modal-footer justify-content-center">
                 <button type="button" class="genric-btn info" data-dismiss="modal">關閉</button>
@@ -60,7 +60,7 @@
         </div>
     </div>
 </div>
-<!--無活動視窗結束-->
+<!--提醒視窗結束-->
 <div class="container">
     <div class="content-box content-box-page mb-0 pb-0">
         <div class="row">
@@ -84,7 +84,9 @@
                 <form>
                     <div class="form-group">
                         <select class="form-control" id="exampleFormControlSelect1">
-                            <option>近期無課程/活動</option>
+                            <option>請選擇</option>
+                            <option>2021/01/23 培力課程-XXX OOO老師</option>
+                            <option>2021/03/01 培力課程-ZZZ OOO老師</option>
                         </select>
                     </div>
                 </form>
@@ -149,17 +151,20 @@
                     <div class="info-box-title"><span class="highlight highlight-light">*</span> 用餐調查</div>
                     <div class="info-box-txt">
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input" checked="checked">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline"
+                                class="custom-control-input" checked="checked">
                             <label class="custom-control-label" for="customRadioInline1">葷食</label>
-                          </div>
-                          <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline"
+                                class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline2">素食</label>
-                          </div>
-                          <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline3" name="customRadioInline" class="custom-control-input">
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline3" name="customRadioInline"
+                                class="custom-control-input">
                             <label class="custom-control-label" for="customRadioInline3">不用餐</label>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,7 +189,7 @@
                         <a href="home.html" class="genric-btn info mr-3 btn-block"><span class="ti-angle-left"></span> 回上一頁</a>
                     </div>
                     <div class="col-lg-4 col-md-5">
-                        <a href="home.html" class="genric-btn highlight btn-block" data-toggle="modal" data-target="#message-none">
+                        <a href="#" class="genric-btn highlight btn-block" data-toggle="modal" data-target="#message-notice">
                             <span class="ti-check"></span> 確認無誤，我要報名
                         </a>
                     </div>
