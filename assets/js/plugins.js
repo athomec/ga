@@ -19,6 +19,7 @@
             console[method] = noop;
         }
     }
+
 }());
 
 // Place any jQuery/helper plugins in here.
@@ -61,3 +62,4 @@ document.addEventListener('DOMContentLoaded', function () {
         rows[i].addEventListener('keydown', enterHandler);
     }
 });
+})//JS尾端	
